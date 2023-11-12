@@ -1,0 +1,68 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Danscan">
+	<main transition:animate="fade">
+		<h1>Entry Ticket to Diwali Party</h1>
+		<h2>Did</h2>
+		<img class="rounded" src="stuti-flowers.JPG" alt="Stuti" />
+		<h2>Bring</h2>
+		<img class="rounded" src="dan-alien.JPG" alt="Stuti" />
+		<br />
+		<div class="button-container">
+			<a class="button yes" href="/success1">Yes</a>
+			<a class="button no" href="/fail">No</a>
+		</div>
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1rem;
+		width: 800px;
+		max-width: calc(100% - 2rem);
+		color: white;
+		font-size: 20px;
+		line-height: 1.6;
+	}
+	h1 {
+		font-size: 4rem;
+		font-weight: 700;
+		line-height: 1;
+		text-align: center;
+		margin-bottom: 1em;
+	}
+	h2 {
+		font-size: 3rem;
+		font-weight: 500;
+		line-height: 1;
+		text-align: center;
+		margin-bottom: 1em;
+	}
+	
+	.rounded {
+		border-radius: 50%;
+		object-fit: cover;
+		object-position: center;
+		width: 150px;
+		height: 150px;
+		margin: 0 auto;
+		display: block;
+	}
+	.button-container {
+		display: flex;
+		justify-content: center;
+	}
+	.button {
+		padding: 1rem 2rem;
+		border-radius: 10%;
+		margin-right: 1rem; /* Add margin-right property to create a gap between the buttons */
+	}
+	.yes {
+		background-color: #00ff00;
+	}
+	.no {
+		background-color: #ff0000;
+	}
